@@ -5,7 +5,7 @@ import json
 import boto3
 
 
-def getting_started_with_python(event, context):
+def lambda_sample(event, context):
     print("Received event: " + json.dumps(event, indent=2))
 
     dynamo = boto3.resource('dynamodb').Table('users')
